@@ -1,26 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
-import { HelloWorld } from './components/HelloWorld';
-
-function App() {
+function Profile() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <img
+      src="https://i.imgur.com/lICfvbD.jpg"
+      alt="Aklilu Lemma"
+    />
   );
 }
 
-export default App;
+export default function Gallery() {
+  return (
+    <section>
+      <h1>Amazing scientists</h1>
+      <Profile />
+      <Profile />
+      <Profile />
+    </section>
+  );
+}
